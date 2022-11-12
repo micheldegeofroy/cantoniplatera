@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<style>
+html,body{
+    margin: 0px;
+}
+
+img{
+    height: 6vh;
+    width: 6vh;
+}
+.container{
+    width: 100vw;
+    height: 98vh;
+    padding-top: 2vh;
+}
+
+.Counter {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Counter h1{
+    width: 10vh;
+    font-size: 50px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+<body>
+<div class="container" style="text-align: center;">
+   
+
+
+    <div class="Counter">
+            <img src="/goimages/Wminus.png" onclick="CountWhiteMinus()"></img>
+            <h1 id="counterwhite">0</h1>
+            <img src="/goimages/Wplus.png" onclick="CountWhitePlus()"></img>
+      </div>
+    <div style="display: flex; align-items: center; justify-content: center;">
+    <div style="font-size:0; white-space: nowrap;">
+        <div class="row">
+            <img src="/goimages/25.png" id="TopLeftCorner" onclick="TLCornerSection(this.id)"></img>
+            <img src="/goimages/22.png" id="top1" onclick="TopSection(this.id)"></img>
+            <img src="/goimages/22.png" id="top2" onclick="TopSection(this.id)"></img>
+            <img src="/goimages/22.png" id="top3" onclick="TopSection(this.id)"></img>
+            <img src="/goimages/22.png" id="top4" onclick="TopSection(this.id)"></img>
+            <img src="/goimages/22.png" id="top5" onclick="TopSection(this.id)"></img>
+            <img src="/goimages/22.png" id="top6" onclick="TopSection(this.id)"></img>
+            <img src="/goimages/22.png" id="top7" onclick="TopSection(this.id)"></img>
+            <img src="/goimages/19.png" id="TopRightCorner" onclick="TRCornerSection(this.id)"></img>
+        </div>
+        <div class="row">
+            <img src="/goimages/4.png" id="LeftSection1" onclick="LeftSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central1" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central2" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central3" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central4" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central5" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central6" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central7" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/16.png" id="RightSection1" onclick="RightSection(this.id)"></img>
+        </div>
+        <div class="row">
+            <img src="/goimages/4.png" id="LeftSection2" onclick="LeftSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central8" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central9" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central10" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central11" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central12" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central13" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central14" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/16.png" id="RightSection2" onclick="RightSection(this.id)"></img>
+        </div>
+        <div class="row">
+            <img src="/goimages/4.png" id="LeftSection3" onclick="LeftSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central15" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central16" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central17" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central18" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central19" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central20" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central21" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/16.png" id="RightSection3" onclick="RightSection(this.id)"></img>
+        </div>
+        <div class="row">
+            <img src="/goimages/4.png" id="LeftSection4" onclick="LeftSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central22" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central23" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central24" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central25" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central26" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central27" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central28" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/16.png" id="RightSection4" onclick="RightSection(this.id)"></img>
+        </div>
+        <div class="row">
+            <img src="/goimages/4.png" id="LeftSection5" onclick="LeftSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central29" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central30" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central31" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central32" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central33" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central34" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central35" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/16.png" id="RightSection5" onclick="RightSection(this.id)"></img>
+        </div>
+        <div class="row">
+            <img src="/goimages/4.png" id="LeftSection6" onclick="LeftSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central36" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central37" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central38" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central39" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central40" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central41" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central42" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/16.png" id="RightSection6" onclick="RightSection(this.id)"></img>
+        </div>
+        <div class="row">
+            <img src="/goimages/4.png" id="LeftSection7" onclick="LeftSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central43" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central44" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central45" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central46" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central47" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central48" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/1.png" id="central49" onclick="CentralSection(this.id)"></img>
+            <img src="/goimages/16.png" id="RightSection7" onclick="RightSection(this.id)"></img>
+        </div>
+        <div class="row">
+            <img src="/goimages/7.png" id="BottomLeftCorner" onclick="BLCornerSection(this.id)"></img>
+            <img src="/goimages/10.png" id="bottom1" onclick="BottomSection(this.id)"></img>
+            <img src="/goimages/10.png" id="bottom2" onclick="BottomSection(this.id)"></img>
+            <img src="/goimages/10.png" id="bottom3" onclick="BottomSection(this.id)"></img>
+            <img src="/goimages/10.png" id="bottom4" onclick="BottomSection(this.id)"></img>
+            <img src="/goimages/10.png" id="bottom5" onclick="BottomSection(this.id)"></img>
+            <img src="/goimages/10.png" id="bottom6" onclick="BottomSection(this.id)"></img>
+            <img src="/goimages/10.png" id="bottom7" onclick="BottomSection(this.id)"></img>
+            <img src="/goimages/13.png" id="BottomRightCorner" onclick="BRCornerSection(this.id)"></img>
+        </div>
+    </div>
+</div>
+    
+
+    <div class="Counter">
+            <img src="/goimages/Bminus.png" onclick="CountBlackMinus()"></img>
+            <h1 id="counterblack">0</h1>
+            <img src="/goimages/Bplus.png" onclick="CountBlackPlus()"></img>
+    </div>
+
+
+
+</div>
+
+</div>
+
+    <script>
+        var counterw = 0, counterb = 0;
+
+        function CountWhitePlus(){
+            counterw = counterw + 1;
+            document.getElementById("counterwhite").innerHTML = counterw;
+        }
+
+        function CountWhiteMinus(){
+            counterw = counterw - 1;
+            if (counterw < 0){
+                counterw = 0;
+            }
+            document.getElementById("counterwhite").innerHTML = counterw;
+        }
+
+        function CountBlackPlus(){
+            counterb = counterb + 1;
+            document.getElementById("counterblack").innerHTML = counterb;
+        }
+
+        function CountBlackMinus(){
+            counterb = counterb - 1;
+            if (counterb < 0){
+                counterb = 0;
+            }
+            document.getElementById("counterblack").innerHTML = counterb;
+        }
+
+        var central = 1;
+
+        function CentralSection(clicked_id){
+            var previousmode = document.getElementById(clicked_id).src;
+            central = central + 1;
+            if (central > 3){
+                central = 1;
+            }
+            var nextmode = "http://cantoni.epizy.com/goimages/" + central + ".png";
+            if (nextmode == previousmode){
+                central = central + 1;
+            }
+            if (central > 3){
+                central = 1;
+            }
+            document.getElementById(clicked_id).src = "/goimages/" + central + ".png";
+        }
+
+        var left = 4;
+
+        function LeftSection(clicked_id) {
+            var previousmode = document.getElementById(clicked_id).src;
+            left = left + 1;
+            if (left > 6) {
+                left = 4;
+            }
+            var nextmode = "http://cantoni.epizy.com/goimages/" + left + ".png";
+            if (nextmode == previousmode) {
+                left = left + 1;
+            }
+            if (left > 6) {
+                left = 4;
+            }
+            document.getElementById(clicked_id).src = "/goimages/" + left + ".png";
+        }
+
+        var right = 16;
+
+        function RightSection(clicked_id){
+            var previousmode = document.getElementById(clicked_id).src;
+            right = right + 1;
+            if (right > 18){
+                right = 16;
+            }
+            var nextmode = "http://cantoni.epizy.com/goimages/" + right + ".png";
+            if (nextmode == previousmode){
+                right = right + 1;
+            }
+            if (right > 18){
+                right = 16;
+            }
+            document.getElementById(clicked_id).src = "/goimages/" + right + ".png";
+        }
+
+        var topsection = 22;
+
+        function TopSection(clicked_id){
+            var previousmode = document.getElementById(clicked_id).src;
+            topsection = topsection + 1;
+            if (topsection > 24){
+            topsection = 22;
+            }
+            var nextmode = "http://cantoni.epizy.com/goimages/" + topsection + ".png";
+            if (nextmode == previousmode){
+                 topsection = topsection + 1;
+            }
+            if (topsection > 24){
+            topsection = 22;
+            }
+            document.getElementById(clicked_id).src = "/goimages/" + topsection + ".png";
+        }
+
+        var bottom = 10;
+
+        function BottomSection(clicked_id){
+            var previousmode = document.getElementById(clicked_id).src;
+            bottom = bottom + 1;
+            if (bottom > 12){
+            bottom = 10;
+            }
+            var nextmode = "http://cantoni.epizy.com/goimages/" + bottom + ".png";
+            if (nextmode == previousmode){
+                 bottom = bottom + 1;
+            }
+            if (bottom > 12){
+            bottom = 10;
+            }
+            document.getElementById(clicked_id).src = "/goimages/" + bottom + ".png";
+        }
+
+        var BLCorner = 7;
+
+        function BLCornerSection(clicked_id){
+            BLCorner = BLCorner + 1;
+            document.getElementById(clicked_id).src = "/goimages/" + BLCorner + ".png";
+            if (BLCorner >= 9){
+                BLCorner = 6;
+            }
+        }
+
+        var BRCorner = 13;
+
+        function BRCornerSection(clicked_id){
+            BRCorner = BRCorner + 1;
+            document.getElementById(clicked_id).src = "/goimages/" + BRCorner + ".png";
+            if (BRCorner >= 15){
+                BRCorner = 12;
+            }
+        }
+
+        var TRCorner = 19;
+
+        function TRCornerSection(clicked_id){
+            TRCorner = TRCorner + 1;
+            document.getElementById(clicked_id).src = "/goimages/" + TRCorner + ".png";
+            if (TRCorner >= 21){
+                TRCorner = 18;
+            }
+        }
+
+        var TLCorner = 25;
+
+        function TLCornerSection(clicked_id){
+            TLCorner = TLCorner + 1;
+            document.getElementById(clicked_id).src = "/goimages/" + TLCorner + ".png";
+            if (TLCorner >= 27){
+                TLCorner = 24;
+            }
+        }
+
+    </script>
+
+</body>
+</html>
